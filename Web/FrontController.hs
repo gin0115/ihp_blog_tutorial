@@ -11,10 +11,10 @@ import Web.Controller.Static
 
 instance FrontController WebApplication where
     controllers = 
-        [ startPage PostsAction
+        [ startPage WelcomeAction
         -- Generator Marker
-{-         , parseRoute @CommentsController
-        , parseRoute @PostsController -}
+        , parseRoute @CommentsController
+        , parseRoute @PostsController
         ]
 
 instance InitControllerContext WebApplication where
